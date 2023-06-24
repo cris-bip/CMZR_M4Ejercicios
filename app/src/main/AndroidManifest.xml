@@ -11,17 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.M4Ejercicios"
         tools:targetApi="31">
-
+        <activity
+            android:name=".passingparameters.FirstActivity"
+            android:exported="false" />
         <activity
             android:name=".implicitintent.IntentImplicitoActivity"
             android:exported="false" />
-
         <activity
             android:name=".lifecycle.LifeCycleActivity"
             android:exported="false" />
-
         <activity
-            android:name=".passingparameters.FirstActivity"
+            android:name=".componentesgraficos.FrameActivity"
             android:exported="true">
 
             <!-- Filtro para ejecutar la actividad como actividad principal -->
