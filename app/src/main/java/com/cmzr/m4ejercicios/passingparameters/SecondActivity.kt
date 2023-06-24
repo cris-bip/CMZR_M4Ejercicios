@@ -3,6 +3,7 @@ package com.cmzr.m4ejercicios.passingparameters
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import com.cmzr.m4ejercicios.R
@@ -11,6 +12,9 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
+
+        // Agrega botón de regreso
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         // Obtiene valores de llaves
         val nombre = intent.getStringExtra("EXTRA_NAME")
@@ -45,7 +49,23 @@ class SecondActivity : AppCompatActivity() {
             }
 
             setResult(RESULT_OK, returnIntent)
-            finish()
+            finish()  // Termina la Activity
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            android.R.id.home ->{  // home es el id por defecto para el botón del back
+                val returnIntent = Intent().apply{
+                    putExtra("EXTRA_IS_OK", true)
+                }
+
+                setResult(RESULT_OK, returnIntent)
+
+                // Realiza pop del stack de vistas
+                onBackPressedDispatcher.onBackPressed()
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
