@@ -12,6 +12,12 @@
         android:theme="@style/Theme.M4Ejercicios"
         tools:targetApi="31">
         <activity
+            android:name=".componentesgraficos.ConstraintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".componentesgraficos.RelativeActivity"
+            android:exported="false" />
+        <activity
             android:name=".componentesgraficos.LinearActivity"
             android:exported="false" />
         <activity
@@ -27,7 +33,7 @@
             android:name=".lifecycle.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.RelativeActivity"
+            android:name=".componentesgraficos.SelectionComponentActivity"
             android:exported="true">
 
             <!-- Filtro para ejecutar la actividad como actividad principal -->
