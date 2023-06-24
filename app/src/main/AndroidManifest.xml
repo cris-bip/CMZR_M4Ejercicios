@@ -34,6 +34,12 @@
         <activity
             android:name=".passingparameters.SecondActivity"
             android:exported="false" />
+
+        <!--<activity
+            android:name=".passingparameters.SecondActivity"
+            android:exported="false"
+            android:parentActivityName=".passingparameters.FirstActivity"
+            />-->
     </application>
 
 </manifest>
