@@ -3,6 +3,7 @@ package com.cmzr.m4ejercicios.componentesgraficos
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.cmzr.m4ejercicios.R
@@ -22,9 +23,14 @@ class PersonAdapter(private var list:List<Person>) : RecyclerView.Adapter<Person
 }
 
 class PersonViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    val id = view.findViewById<TextView>(R.id.userId)
     val name = view.findViewById<TextView>(R.id.nameText)
+    val textTweet = view.findViewById<TextView>(R.id.textoTweet)
+    val avatarImage = view.findViewById<ImageView>(R.id.avatarImage)
 
     fun render(person: Person){
+        id.text = person.id
         name.text = person.name
+        textTweet.text = person.textoTweet
     }
 }
