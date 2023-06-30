@@ -75,7 +75,7 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:text="Enviar"
+        android:text="Registrar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/genderRadioGroup"
