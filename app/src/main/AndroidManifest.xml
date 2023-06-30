@@ -12,6 +12,13 @@
         android:theme="@style/Theme.M4Ejercicios"
         tools:targetApi="31">
         <activity
+            android:name=".tareaRegistro.ConfirmacionActivity"
+            android:parentActivityName=".tareaRegistro.RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ejercicios2.componentesgraficos.recycleview.RecyclerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ejercicios2.componentesgraficos.SelectionComponentActivity"
             android:exported="false" />
         <activity
@@ -36,7 +43,7 @@
             android:name=".ejercicios1.lifecycle.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".ejercicios2.componentesgraficos.recycleview.RecyclerActivity"
+            android:name=".tareaRegistro.RegistroActivity"
             android:exported="true">
 
             <!-- Filtro para ejecutar la actividad como actividad principal -->
