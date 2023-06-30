@@ -14,7 +14,7 @@ class SelectionComponentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_selection_component)
 
         val btEnviar = findViewById<Button>(R.id.btEnviar)
-        val hasCreditCard = findViewById<CheckBox>(R.id.hasTarjetaCredito)
+        val activateNotifications = findViewById<CheckBox>(R.id.activateNotificationsCheckBox)
 
         val countrySelector = findViewById<Spinner>(R.id.countrySpinnerSelector)
         val countries = arrayListOf<String>("México", "Argentina", "Estados Unidos", "Inglaterra",
@@ -51,12 +51,12 @@ class SelectionComponentActivity : AppCompatActivity() {
         }
 
         btEnviar.setOnClickListener {
-            showToast(hasCreditCard.isChecked)
+            showToast(activateNotifications.isChecked)
 
             showRadioSelection(radioGender.checkedRadioButtonId)
         }
 
-        hasCreditCard.setOnCheckedChangeListener { _, isChecked ->
+        activateNotifications.setOnCheckedChangeListener { _, isChecked ->
             showToast(isChecked)
         }
     }
@@ -74,12 +74,12 @@ class SelectionComponentActivity : AppCompatActivity() {
         if(isChecked){
             Toast
                 .makeText(this,
-                    "El usuario tiene tarjeta de crédito", Toast.LENGTH_SHORT)
+                    "El usuario desea notificaciones", Toast.LENGTH_SHORT)
                 .show()
         }else{
             Toast
                 .makeText(this,
-                    "El usuario no tiene tarjeta de crédito", Toast.LENGTH_SHORT)
+                    "El usuario rechaza las notificaciones", Toast.LENGTH_SHORT)
                 .show()
         }
     }
