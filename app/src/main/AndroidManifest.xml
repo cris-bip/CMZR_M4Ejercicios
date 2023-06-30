@@ -15,10 +15,10 @@
             android:name=".componentesgraficos.RecyclerActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.ConstraintActivity"
+            android:name=".componentesgraficos.SelectionComponentActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.RelativeActivity"
+            android:name=".componentesgraficos.ConstraintActivity"
             android:exported="false" />
         <activity
             android:name=".componentesgraficos.LinearActivity"
@@ -36,7 +36,7 @@
             android:name=".lifecycle.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.SelectionComponentActivity"
+            android:name=".componentesgraficos.RelativeActivity"
             android:exported="true">
 
             <!-- Filtro para ejecutar la actividad como actividad principal -->
