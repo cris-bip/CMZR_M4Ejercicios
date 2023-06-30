@@ -1,4 +1,4 @@
-package com.cmzr.m4ejercicios.passingparameters
+package com.cmzr.m4ejercicios.ejercicios1.passingparameters
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

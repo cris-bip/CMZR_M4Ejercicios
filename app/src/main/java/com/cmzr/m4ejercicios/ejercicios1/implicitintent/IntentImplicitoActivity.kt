@@ -1,4 +1,4 @@
-package com.cmzr.m4ejercicios.implicitintent
+package com.cmzr.m4ejercicios.ejercicios1.implicitintent
 
 import android.content.Intent
 import android.net.Uri

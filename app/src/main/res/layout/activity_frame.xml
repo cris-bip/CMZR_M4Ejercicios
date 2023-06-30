@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".componentesgraficos.FrameActivity">
+    tools:context=".ejercicios2.componentesgraficos.FrameActivity">
 
     <TextView
         android:layout_gravity="center"

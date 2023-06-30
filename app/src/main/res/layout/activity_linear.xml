@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".componentesgraficos.LinearActivity">
+    tools:context=".ejercicios2.componentesgraficos.LinearActivity">
     <TextView
         android:text="Tic tac toe with Linear Layout"
         android:layout_marginStart="16dp"

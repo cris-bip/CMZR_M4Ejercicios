@@ -1,4 +1,4 @@
-package com.cmzr.m4ejercicios.componentesgraficos
+package com.cmzr.m4ejercicios.ejercicios2.componentesgraficos.recycleview
 
 import android.view.LayoutInflater
 import android.view.View

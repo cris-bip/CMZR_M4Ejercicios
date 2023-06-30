@@ -12,31 +12,31 @@
         android:theme="@style/Theme.M4Ejercicios"
         tools:targetApi="31">
         <activity
-            android:name=".componentesgraficos.RecyclerActivity"
+            android:name=".ejercicios2.componentesgraficos.SelectionComponentActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.SelectionComponentActivity"
+            android:name=".ejercicios2.componentesgraficos.RelativeActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.ConstraintActivity"
+            android:name=".ejercicios2.componentesgraficos.FrameActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.RelativeActivity"
+            android:name=".ejercicios2.componentesgraficos.LinearActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.LinearActivity"
+            android:name=".ejercicios2.componentesgraficos.ConstraintActivity"
             android:exported="false" />
         <activity
-            android:name=".passingparameters.FirstActivity"
+            android:name=".ejercicios1.passingparameters.FirstActivity"
             android:exported="false" />
         <activity
-            android:name=".implicitintent.IntentImplicitoActivity"
+            android:name=".ejercicios1.implicitintent.IntentImplicitoActivity"
             android:exported="false" />
         <activity
-            android:name=".lifecycle.LifeCycleActivity"
+            android:name=".ejercicios1.lifecycle.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.FrameActivity"
+            android:name=".ejercicios2.componentesgraficos.recycleview.RecyclerActivity"
             android:exported="true">
 
             <!-- Filtro para ejecutar la actividad como actividad principal -->
@@ -47,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".passingparameters.SecondActivity"
+            android:name=".ejercicios1.passingparameters.SecondActivity"
             android:exported="false" />
     </application>
 

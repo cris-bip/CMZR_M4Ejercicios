@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".componentesgraficos.RecyclerActivity">
+    tools:context=".ejercicios2.componentesgraficos.recycleview.RecyclerActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/peopleList"

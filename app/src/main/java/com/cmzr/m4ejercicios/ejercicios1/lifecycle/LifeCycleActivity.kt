@@ -1,4 +1,4 @@
-package com.cmzr.m4ejercicios.lifecycle
+package com.cmzr.m4ejercicios.ejercicios1.lifecycle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
