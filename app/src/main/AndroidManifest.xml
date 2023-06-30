@@ -24,7 +24,7 @@
             android:name=".componentesgraficos.RelativeActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.FrameActivity"
+            android:name=".componentesgraficos.LinearActivity"
             android:exported="false" />
         <activity
             android:name=".passingparameters.FirstActivity"
@@ -36,7 +36,7 @@
             android:name=".lifecycle.LifeCycleActivity"
             android:exported="false" />
         <activity
-            android:name=".componentesgraficos.LinearActivity"
+            android:name=".componentesgraficos.FrameActivity"
             android:exported="true">
 
             <!-- Filtro para ejecutar la actividad como actividad principal -->
