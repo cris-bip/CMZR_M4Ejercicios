@@ -5,26 +5,39 @@
     android:id="@+id/root"
     android:layout_marginTop="16dp"
     android:layout_marginBottom="16dp"
-    android:background="@color/orange"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:src="@drawable/ic_bunny"
-        android:id="@+id/ivAnimal"
-        app:layout_constraintStart_toStartOf="parent"
+    <androidx.cardview.widget.CardView
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:textStyle="bold"
-        style="@style/TextView"
-        android:id="@+id/tvAnimalName"
-        app:layout_constraintStart_toEndOf="@+id/ivAnimal"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+            <ImageView
+                android:src="@drawable/img_android"
+                android:scaleType="centerCrop"
+                android:id="@+id/ivAnimal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
 
+            <TextView
+                android:textStyle="bold"
+                style="@style/TextView"
+                android:id="@+id/tvAnimalName"
+                app:layout_constraintStart_toEndOf="@+id/ivAnimal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
