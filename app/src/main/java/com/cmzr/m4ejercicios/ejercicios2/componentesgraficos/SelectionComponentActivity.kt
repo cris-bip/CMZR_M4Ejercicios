@@ -6,24 +6,27 @@ import android.view.View
 import android.widget.*
 import android.widget.AdapterView.OnItemSelectedListener
 import com.cmzr.m4ejercicios.R
+import com.cmzr.m4ejercicios.databinding.ActivitySelectionComponentBinding
 
 class SelectionComponentActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySelectionComponentBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selection_component)
 
-        val btEnviar = findViewById<Button>(R.id.btEnviar)
-        val activateNotifications = findViewById<CheckBox>(R.id.activateNotificationsCheckBox)
+        // Realiza binding para obtener todos los componentes declarados en el layout
+        binding = ActivitySelectionComponentBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val countrySelector = findViewById<Spinner>(R.id.countrySpinnerSelector)
         val countries = arrayListOf<String>("México", "Argentina", "Estados Unidos", "Inglaterra",
             "Japón", "Venezuela", "Rusia", "Colombia", "Alemania", "Korea del Norte", "Korea del Sur")
         val countryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, countries)
         countryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        countrySelector.adapter = countryAdapter
+        binding.countrySpinnerSelector.adapter = countryAdapter
 
-        countrySelector.onItemSelectedListener = object : OnItemSelectedListener {
+        binding.countrySpinnerSelector.onItemSelectedListener = object : OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
                 view: View?,
@@ -42,21 +45,17 @@ class SelectionComponentActivity : AppCompatActivity() {
             }
         }
 
-
-
-        val radioGender = findViewById<RadioGroup>(R.id.radioGender)
-
-        radioGender.setOnCheckedChangeListener { group, checkedId ->
+        binding.radioGender.setOnCheckedChangeListener { group, checkedId ->
             showRadioSelection(checkedId)
         }
 
-        btEnviar.setOnClickListener {
-            showToast(activateNotifications.isChecked)
+        binding.btEnviar.setOnClickListener {
+            showToast(binding.activateNotificationsCheckBox.isChecked)
 
-            showRadioSelection(radioGender.checkedRadioButtonId)
+            showRadioSelection(binding.radioGender.checkedRadioButtonId)
         }
 
-        activateNotifications.setOnCheckedChangeListener { _, isChecked ->
+        binding.activateNotificationsCheckBox.setOnCheckedChangeListener { _, isChecked ->
             showToast(isChecked)
         }
     }
