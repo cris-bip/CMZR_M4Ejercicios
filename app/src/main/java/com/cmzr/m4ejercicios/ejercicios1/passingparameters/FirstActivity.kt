@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import com.cmzr.m4ejercicios.R
+import com.cmzr.m4ejercicios.ejercicios2.componentesgraficos.recycleview.animals.Animal
 
 class FirstActivity : AppCompatActivity() {
     private val register = registerForActivityResult(StartActivityForResult()){result ->
@@ -37,6 +38,7 @@ class FirstActivity : AppCompatActivity() {
 
         val btCall = findViewById<Button>(R.id.btCall)
 
+        val animal = Animal("Cocodrilo", "Albino")
         btCall.setOnClickListener {
             val secondIntent = Intent(this, SecondActivity::class.java).apply {
                 putExtra("EXTRA_NAME", "Cristian Michael")
@@ -44,6 +46,7 @@ class FirstActivity : AppCompatActivity() {
                 putExtra("EXTRA_AGE", 29)
                 putExtra("EXTRA_GENDER", 'M')
                 putExtra("EXTRA_HEIGHT", 1.76)
+                putExtra("EXTRA_ANIMAL", animal)
             }
 
             //startActivity(secondIntent) -

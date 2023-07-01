@@ -1,12 +1,15 @@
 package com.cmzr.m4ejercicios.ejercicios1.passingparameters
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.cmzr.m4ejercicios.R
+import com.cmzr.m4ejercicios.ejercicios2.componentesgraficos.recycleview.animals.Animal
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +25,15 @@ class SecondActivity : AppCompatActivity() {
         val edad = intent.getIntExtra("EXTRA_AGE", -1)
         val genero = intent.getCharExtra("EXTRA_GENDER", 'E')
         val altura = intent.getDoubleExtra("EXTRA_HEIGHT", 0.00)
+
+
+        val animal = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+            intent.getSerializableExtra("EXTRA_ANIMAL", Animal::class.java)
+        }else{
+            intent.getSerializableExtra("EXTRA_ANIMAL") as Animal
+        }
+
+        Toast.makeText(this, "Animal ${animal?.name}", Toast.LENGTH_SHORT).show()
 
         // Configura SecondActivity
         val tvName = findViewById<TextView>(R.id.textViewName)
