@@ -8,9 +8,9 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.cmzr.m4ejercicios.R
+import com.squareup.picasso.Picasso
 
 class AnimalAdapter(private val list:List<Animal>) : RecyclerView.Adapter<AnimalViewHolder>() {
-
     var onItemSelected : ((Animal) -> Unit)? = null
 
     // Se pueden renderizar diferentes tipos de vista utilizando el viewType
@@ -35,12 +35,17 @@ class AnimalViewHolder(view: View) : RecyclerView.ViewHolder(view){
     val ivAnimal = view.findViewById<ImageView>(R.id.ivAnimal)
     val tvAnimal = view.findViewById<TextView>(R.id.tvAnimalName)
 
+
+
     fun render(animal: Animal, onItemSelected : ((Animal) -> Unit)?) {
         tvAnimal.text = animal.name
 
         root.setOnClickListener {
             onItemSelected?.invoke(animal)
         }
-    }
 
+        Picasso.get()
+            .load("https://www.nationalgeographic.com.es/medio/2022/12/12/leon-1_b21b27e1_221212155936_1280x720.jpg")
+            .into(ivAnimal)
+    }
 }
