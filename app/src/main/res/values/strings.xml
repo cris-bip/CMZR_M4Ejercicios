@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">M4Ejercicios</string>
+
+<!--    Activity selection component-->
+    <string name="label_require_notifications">¿Do you want notifications?</string>
+    <string name="profile_header">Profile</string>
+    <string name="about_you">About you</string>
+    <string name="lable_man">Man</string>
+    <string name="label_woman">Woman</string>
+    <string name="choise_country_label">Choise your country</string>
+    <string name="register_buton_label">Register</string>
 </resources>

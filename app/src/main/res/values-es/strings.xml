@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">M4Ejercicios</string>
+
+    <!--    Activity selection component-->
+    <string name="label_require_notifications">¿Deseas activar las notificaciones de la app?</string>
+    <string name="profile_header">Registro de perfil</string>
+    <string name="about_you">Cuentanos acerca de ti</string>
+    <string name="lable_man">Hombre</string>
+    <string name="label_woman">Mujer</string>
+    <string name="choise_country_label">Selecciona tu país</string>
+    <string name="register_buton_label">Registrar</string>
+</resources>

@@ -12,7 +12,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
-        android:text="Registro de perfil"
+        android:text="@string/profile_header"
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
 
     <EditText
         android:id="@+id/perfilDescription"
-        android:hint="Cuentanos acerca de ti"
+        android:hint="@string/about_you"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="¿Deseas activar las notificaciones de la app?"
+        android:text="@string/label_require_notifications"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/countrySpinnerSelector" />
 
@@ -84,19 +84,19 @@
             android:id="@+id/radioMen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hombre" />
+            android:text="@string/lable_man" />
 
         <RadioButton
             android:id="@+id/radioWoman"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
-            android:text="Mujer" />
+            android:text="@string/label_woman" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/paisLabel"
-        android:text="Selecciona tu país"
+        android:text="@string/choise_country_label"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/radioGender"
@@ -117,7 +117,7 @@
         android:id="@+id/btEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:text="@string/register_buton_label"
         app:layout_constraintTop_toBottomOf="@id/activateNotificationsCheckBox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
