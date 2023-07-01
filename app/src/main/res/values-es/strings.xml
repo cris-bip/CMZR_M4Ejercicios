@@ -11,4 +11,5 @@
     <string name="label_woman">Mujer</string>
     <string name="choise_country_label">Selecciona tu país</string>
     <string name="register_buton_label">Registrar</string>
+    <string name="label_fragment_title">Ejemplo de Fragment</string>
 </resources>
