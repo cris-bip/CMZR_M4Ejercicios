@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".practicafinal.iniciosesion.RegistroFragment">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        style="@style/FieldStyle"
+        android:hint="@string/firstname_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_marginTop="65dp"
+        style="@style/FieldStyle"
+        android:hint="@string/lastname_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        style="@style/FieldStyle"
+        android:hint="@string/email_hint"
+        android:layout_marginTop="115dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/registerPasswordEditText"
+        style="@style/FieldStyle"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:layout_marginTop="165dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/newUserRegistrationButton"
+        android:text="@string/registration_button_label"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

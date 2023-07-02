@@ -10,6 +10,20 @@
     <string name="choise_country_label">Choise your country</string>
     <string name="register_buton_label">Register</string>
     <string name="label_fragment_title">Fragment example</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="register_button_label">¿Any count yet?</string>
+    <string name="firstname_hint">Firstname</string>
+    <string name="lastname_hint">Lastname</string>
+    <string name="registration_button_label">Register</string>
+    <string name="full_name_label">Name:</string>
+    <string name="email_label">Email:</string>
+    <string name="password_label">Password:</string>
+    <string name="welcome_label">Welcome</string>
+
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
 </resources>
