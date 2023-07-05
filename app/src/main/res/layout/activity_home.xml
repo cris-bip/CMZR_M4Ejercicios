@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".practicafinal.iniciosesion.HomeActivity">
 
+    <ImageView
+        android:id="@+id/ivHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordOutputText"
+        android:layout_marginTop="16dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
     <TextView
         style="@style/TextView"
         android:id="@+id/welcomeLabel"

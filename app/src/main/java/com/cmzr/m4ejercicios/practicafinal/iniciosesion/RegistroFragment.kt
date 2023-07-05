@@ -9,15 +9,20 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.cmzr.m4ejercicios.R
 import com.cmzr.m4ejercicios.databinding.FragmentRegistroBinding
+import com.squareup.picasso.Picasso
 
 class RegistroFragment : Fragment(R.layout.fragment_registro) {
 
     private  lateinit var binding: FragmentRegistroBinding
 
+    private val registerImageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ytxmkPbCzjiioabIX_yFrPKWSiEOynMhlQ&usqp=CAU"
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding = FragmentRegistroBinding.bind(view)
+
+        Picasso.get().load(registerImageUrl).into(binding.ivRegister)
 
         binding.newUserRegistrationButton.setOnClickListener {
 
